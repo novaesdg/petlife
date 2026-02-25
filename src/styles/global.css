@@ -11,9 +11,9 @@
   --content-primary: #ffffff;
   --content-secondary: #98959d;
   --content-tertiary: #666666;
-  --content-brand: #9282fa;
+  --content-brand: #9282FA;
 
-  --background-primary: #151515;
+  --background-primary: #14151d;
   --background-secondary: #1e1e1e;
   --background-tertiary: #23242c;
   --background-brand: #9282fa;
@@ -42,4 +42,33 @@
   --fs-sm: 0.875rem;
   --fs-md: 1rem;
   --fs-xl: 1.5rem;
+}
+
+body {
+  background-color: var(--background-primary);
+  color: var(--content-primary);
+  font-family: var(--ff-base);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  background: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
