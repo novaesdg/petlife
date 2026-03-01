@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,7 +13,7 @@
     />
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <img src="./src/assets/logo.svg" alt="Logo da PetLife" />
       <span>Pet Life</span>
     </header>
@@ -126,12 +126,126 @@
         </div>
       </section>
       <div class="new-appointment-container">
-        <button class="btn-new-appointment">
-          NOVO AGENDAMENTO
-        </button>
+        <button class="btn-new-appointment">NOVO AGENDAMENTO</button>
       </div>
     </main>
 
+    <dialog id="new-appointment-modal" class="modal">
+      <div class="modal-container">
+        <header class="modal-header">
+          <div class="modal-title">
+            <h2>Agende um atendimento</h2>
+            <p>Preencha os dados do cliente para realizar o agendamento:</p>
+          </div>
+          <button
+            class="btn-close"
+            aria-label="Fechar modal"
+            formmethod="dialog"
+          >
+            <img src="./src/assets/close.svg" alt="Ícone de fechar" />
+          </button>
+        </header>
+
+        <form id="new-appointment-form">
+          <div class="input-container">
+            <label for="tutor-name">Nome do tutor</label>
+            <div class="input-field">
+              <img
+                src="./src/assets/form icons/user.svg"
+                alt="Ícone de usuário"
+              />
+              <input
+                id="tutor-name"
+                type="text"
+                name="tutor-name"
+                placeholder="Diogo Novaes"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="pet-name">Nome do pet</label>
+            <div class="input-field">
+              <img src="./src/assets/form icons/pet.svg" alt="Ícone de pet" />
+              <input
+                id="pet-name"
+                type="text"
+                name="pet-name"
+                placeholder="Max"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="telephone">Telefone</label>
+            <div class="input-field">
+              <img
+                src="./src/assets/form icons/phone.svg"
+                alt="Ícone de telefone"
+              />
+              <input
+                id="telephone"
+                type="tel"
+                name="telephone"
+                placeholder="(00) 0 0000-0000"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="description">Descrição do serviço</label>
+            <div class="input-field">
+              <textarea
+                name="description"
+                id="description"
+                placeholder="Banho e tosa"
+                rows="4"
+                cols="33"
+              ></textarea>
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="appointment-date">Data</label>
+            <div class="input-field">
+              <img src="./src/assets/calendar.svg" alt="Ícone de calendário" />
+              <input
+                id="appointment-date"
+                type="date"
+                name="appointment-date"
+                value="2026-01-01"
+                required
+              />
+              <img
+                src="./src/assets/arrow-down.svg"
+                alt="Ícone de seta para baixo"
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="appointment-time">Hora</label>
+            <div class="input-field">
+              <img
+                src="./src/assets/form icons/clock.svg"
+                alt="Ícone de relógio"
+              />
+              <input
+                id="appointment-time"
+                type="time"
+                name="appointment-time"
+                value="20:30"
+                required
+              />
+              <img
+                src="./src/assets/arrow-down.svg"
+                alt="Ícone de seta para baixo"
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="btn-submit">AGENDAR</button>
+        </form>
+      </div>
+    </dialog>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

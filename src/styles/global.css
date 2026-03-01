@@ -11,10 +11,10 @@
   --content-primary: #ffffff;
   --content-secondary: #98959d;
   --content-tertiary: #666666;
-  --content-brand: #9282FA;
+  --content-brand: #9282fa;
 
   --background-primary: #14151d;
-  --background-secondary: #2E2C30;
+  --background-secondary: #2e2c30;
   --background-tertiary: #23242c;
   --background-brand: #9282fa;
   --background-highlights: #bdb4fa;
@@ -22,7 +22,7 @@
   --border-primary: #3e3c41;
   --border-secondary: #86818c;
   --border-brand: #9282fa;
-  --border-divisor: #2E2C30;
+  --border-divisor: #2e2c30;
 
   --accent-blue: #027df0;
   --accent-blue-light: #16487a;
@@ -74,6 +74,11 @@ a {
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }

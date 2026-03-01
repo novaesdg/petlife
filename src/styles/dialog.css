@@ -1,0 +1,113 @@
+.modal {
+  border: none;
+  margin: auto;
+  background: transparent;
+  max-width: 90%;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+.modal-container {
+  background-color: var(--background-tertiary);
+  border-radius: 0.75rem;
+  padding: 2.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  position: relative;
+}
+
+/* MODAL HEADER CSS */
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.325rem;
+}
+
+.modal-header h2 {
+  font: 700 var(--fs-xl)/2rem var(--ff-title);
+  color: var(--content-primary);
+}
+
+.modal-header p {
+  font: 500 var(--fs-sm)/1.5rem var(--ff-base);
+  color: var(--content-secondary);
+}
+
+.modal-header .btn-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+
+/* FORM CSS */
+
+#new-appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.input-container label {
+  font: 500 var(--fs-sm)/1.5rem var(--ff-base);
+  color: var(--content-primary);
+}
+
+.input-field {
+  border: 1px solid var(--border-primary);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-field:hover,
+textarea:hover {
+  border-color: var(--border-secondary);
+}
+
+.input-field:active,
+textarea:active {
+  border-color: var(--content-brand);
+}
+
+.input-field input {
+  margin-right: auto;
+}
+
+.input-field textarea {
+  resize: none;
+}
+
+.input-field input,
+input::placeholder,
+textarea,
+textarea::placeholder {
+  color: var(--content-secondary);
+  outline: none;
+}
+
+.btn-submit {
+  margin-top: 1.25rem;
+  background-color: var(--content-brand);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font: 700 var(--fs-md)/1.5rem var(--ff-base);
+  box-shadow: 0px 4px 24px rgba(146, 130, 250, 0.4);
+  color: var(--background-primary);
+}
+
+.btn-submit:hover {
+  background-color: var(--background-highlights);
+}
