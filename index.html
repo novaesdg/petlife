@@ -1,19 +1,131 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PetLife</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,700;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,700;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <img src="./src/assets/logo.svg" alt="Logo da PetLife">
+      <img src="./src/assets/logo.svg" alt="Logo da PetLife" />
       <span>Pet Life</span>
     </header>
+
+    <main>
+      <section id="schedule-header">
+        <div class="schedule-header__text">
+          <h1>Sua agenda</h1>
+          <p>
+            Aqui você pode ver todos os clientes e serviços agendados para hoje.
+          </p>
+        </div>
+        <div class="schedule-date-picker">
+          <img src="./src/assets/calendar.svg" alt="Ícone de calendário" />
+          <input
+            id="schedule-date"
+            type="date"
+            name="schedule-date"
+            value="2026-01-01"
+            aria-label="Selecione a data do agendamento"
+          />
+          <img
+            src="./src/assets/arrow-down.svg"
+            alt="Ícone de seta para baixo"
+          />
+        </div>
+      </section>
+      <section id="schedule-content">
+        <div class="appointment">
+          <div class="appointment-header">
+            <img src="./src/assets/morning.svg" alt="Ícone do turno matutino" />
+            <h2>Manhã</h2>
+            <span class="appointment-period">09h-12h</span>
+          </div>
+          <div class="appointment-list">
+            <div class="appointment-card">
+              <div class="appointment-card__info">
+                <div class="appointment-card__title">
+                  <strong>9:00</strong>
+                  <strong>Thor</strong>
+                  <span class="appointment-card__owner">/ Fernanda Costa</span>
+                </div>
+                <span class="appointment-card__service">Vacinação</span>
+              </div>
+              <button class="btn-remove" aria-label="Remover agendamento">
+                Remover agendamento
+              </button>
+            </div>
+            <div class="appointment-card">
+              <div class="appointment-card__info">
+                <div class="appointment-card__title">
+                  <strong>9:00</strong>
+                  <strong>Thor</strong>
+                  <span class="appointment-card__owner">/ Fernanda Costa</span>
+                </div>
+                <span class="appointment-card__service">Vacinação</span>
+              </div>
+              <button class="btn-remove" aria-label="Remover agendamento">
+                Remover agendamento
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="appointment">
+          <div class="appointment-header">
+            <img
+              src="./src/assets/afternoom.svg"
+              alt="Ícone do turno vespertino"
+            />
+            <h2>Tarde</h2>
+            <span class="appointment-period">13h-18h</span>
+          </div>
+          <div class="appointment-list">
+            <div class="appointment-card">
+              <div class="appointment-card__info">
+                <div class="appointment-card__title">
+                  <strong>13:00</strong>
+                  <strong>Mel</strong>
+                  <span class="appointment-card__owner">/ João Souza</span>
+                </div>
+                <span class="appointment-card__service">Corte de unhas</span>
+              </div>
+              <button class="btn-remove" aria-label="Remover agendamento">
+                Remover agendamento
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="appointment">
+          <div class="appointment-header">
+            <img src="./src/assets/night.svg" alt="Ícone do turno noturno" />
+            <h2>Noite</h2>
+            <span class="appointment-period">19h-21h</span>
+          </div>
+          <div class="appointment-list">
+            <div class="appointment-card">
+              <div class="appointment-card__info">
+                <div class="appointment-card__title">
+                  <strong>20:00</strong>
+                  <strong>Max</strong>
+                  <span class="appointment-card__owner">/ Camila Santos</span>
+                </div>
+                <span class="appointment-card__service">Limpeza de dentes</span>
+              </div>
+              <button class="btn-remove" aria-label="Remover agendamento">
+                Remover agendamento
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script type="module" src="/src/main.js"></script>
   </body>

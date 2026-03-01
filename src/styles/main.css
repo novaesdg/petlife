@@ -1,0 +1,116 @@
+main {
+  margin-top: .325rem;
+  padding: .75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* SCHEDULE HEADER CSS */
+
+#schedule-header {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.schedule-header__text {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.schedule-header__text h1 {
+  font: 700 var(--fs-xl)/2rem var(--ff-title);
+}
+
+.schedule-header__text p {
+  font: 500 var(--fs-sm)/1.5rem var(--ff-base);
+  color: var(--content-secondary);
+}
+
+/* SCHEDULE DATE CSS */
+
+.schedule-date-picker {
+  border: 1px solid var(--border-primary);
+  border-radius: .5rem;
+  padding: .75rem;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.schedule-date-picker input {
+  color: var(--content-secondary);
+}
+
+/* SCHEDULE CONTENT CSS */
+
+#schedule-content {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.appointment {
+  background-color: var(--background-tertiary);
+  border-radius: .625rem;
+}
+
+.appointment-header {
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+  padding: .75rem 1.25rem;
+  border-bottom: 1px solid var(--border-divisor);
+}
+
+.appointment-header h2 {
+  font: 700 var(--fs-md)/1.5rem var(--ff-base);
+  margin-right: auto;
+}
+
+.appointment-period {
+  font: 700 var(--fs-md)/1.5rem var(--ff-base);
+  color: var(--content-secondary);
+}
+
+.appointment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
+.appointment-card {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: .75rem;
+  border-bottom: 1px solid var(--border-divisor);
+}
+
+.appointment-card:last-child {
+  border: none;
+}
+
+.appointment-card__info span {
+  font: 500 var(--fs-sm)/1.5rem var(--ff-base);
+  color: var(--content-secondary);
+}
+
+.appointment-card__title strong {
+  font: 700 var(--fs-sm)/1.5rem var(--ff-base);
+  color: var(--content-primary);
+}
+
+.appointment-card__title strong + strong{
+  margin-left: .75rem;
+}
+
+.btn-remove {
+  align-self: flex-end;
+  font: 500 var(--fs-xs)/1rem var(--ff-base);
+  color: var(--content-tertiary);
+}

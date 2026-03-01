@@ -14,7 +14,7 @@
   --content-brand: #9282FA;
 
   --background-primary: #14151d;
-  --background-secondary: #1e1e1e;
+  --background-secondary: #2E2C30;
   --background-tertiary: #23242c;
   --background-brand: #9282fa;
   --background-highlights: #bdb4fa;
@@ -22,7 +22,7 @@
   --border-primary: #3e3c41;
   --border-secondary: #86818c;
   --border-brand: #9282fa;
-  --border-divisor: #353339;
+  --border-divisor: #2E2C30;
 
   --accent-blue: #027df0;
   --accent-blue-light: #16487a;
@@ -71,4 +71,9 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }
