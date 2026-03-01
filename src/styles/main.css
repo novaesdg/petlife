@@ -114,3 +114,27 @@ main {
   font: 500 var(--fs-xs)/1rem var(--ff-base);
   color: var(--content-tertiary);
 }
+
+/* NEW APPOINTMENT CSS */
+
+.new-appointment-container {
+  background-color: var(--background-tertiary);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.125rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-new-appointment {
+  background-color: var(--content-brand);
+  padding: .75rem 1.5rem;
+  border-radius: .5rem;
+  font: 700 var(--fs-md)/1.5rem var(--ff-base);
+  box-shadow: 0px 4px 24px rgba(146, 130, 250, 0.4);
+  color: var(--background-primary);
+}
+
