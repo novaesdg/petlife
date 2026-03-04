@@ -13,3 +13,11 @@
   font-size: var(--fs-md);
   font-weight: var(--fw-bold);
 }
+
+@media (min-width: 1200px) {
+  .page-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+}

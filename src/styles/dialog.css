@@ -82,8 +82,12 @@ textarea:active {
   border-color: var(--content-brand);
 }
 
-.input-field input {
-  margin-right: auto;
+.input-field input,
+.input-field textarea,
+.schedule-date-picker input {
+  flex: 1; 
+  width: 100%;
+  cursor: text; 
 }
 
 .input-field textarea {
@@ -110,4 +114,15 @@ textarea::placeholder {
 
 .btn-submit:hover {
   background-color: var(--background-highlights);
+}
+
+@media (min-width: 1200px) {
+  .modal-container {
+    padding: 2.25rem 3rem;
+  }
+
+
+  .modal::-webkit-scrollbar {
+    display: none;
+  }
 }
