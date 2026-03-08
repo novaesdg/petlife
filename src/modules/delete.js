@@ -21,7 +21,7 @@ appointmentList.forEach((appointment) => {
         if(isConfirm) {
           await deleteAppointment(id)
 
-          location.reload()
+          item.remove()
         }
       }
     }
