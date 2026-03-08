@@ -9,3 +9,17 @@ export async function getAppointments() {
   }
 }
 
+// Função para enviar um novo agendamento para o json.
+export async function postAppointment(data) {
+  try {
+    await fetch("http://localhost:3333/appointments", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  })
+  } catch (error) {
+    console.error("Não foi possível criar um novo agendamento", error)
+  }
+}
