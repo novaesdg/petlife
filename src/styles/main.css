@@ -109,13 +109,13 @@ main {
   margin-left: 0.75rem;
 }
 
-.btn-remove {
+.btn-delete {
   align-self: flex-end;
   font: 500 var(--fs-xs)/1rem var(--ff-base);
   color: var(--content-tertiary);
 }
 
-.btn-remove:hover {
+.btn-delete:hover {
   color: var(--content-primary);
 }
 
@@ -187,7 +187,7 @@ main {
     margin-left: .25rem;
   }
 
-  .btn-remove {
+  .btn-delete {
     align-self: center;
   }
 

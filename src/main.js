@@ -3,6 +3,7 @@
 import "../src/styles/index.css"
 import "./libs/dayjs.js"
 import "./modules/form.js"
+import "./modules/delete.js"
 
 import { renderAppointments } from "./modules/load.js"
 
