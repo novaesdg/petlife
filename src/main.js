@@ -5,6 +5,7 @@ import "./modules/form.js"
 import "./modules/delete.js"
 import "./modules/date.js"
 import "./modules/modal.js"
+import "./modules/inputs.js"
 
 import dayjs from "./libs/dayjs.js"
 import { renderAppointments } from "./modules/load.js"
