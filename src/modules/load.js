@@ -13,7 +13,7 @@ export async function renderAppointments(appointments) {
     const hour = parseInt(appointment.time) 
 
     const cardHTML = `
-      <div class="appointment-card">
+      <div data-id="${appointment.id}" class="appointment-card">
         <div class="appointment-card__info">
           <div class="appointment-card__title">
             <strong>${appointment.time}</strong>
@@ -22,7 +22,7 @@ export async function renderAppointments(appointments) {
           </div>
           <span class="appointment-card__service">${appointment.service}</span>
         </div>
-        <button class="btn-remove" aria-label="Remover agendamento">
+        <button class="btn-delete" aria-label="Remover agendamento">
           Remover agendamento
         </button>
       </div>
