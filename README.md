@@ -42,7 +42,7 @@ O PetLife é uma Single Page Application (SPA) desenvolvida para gerenciar a age
 
 ## ⚙️ Como Executar
 
-Como este projeto utiliza o `json-server` para simular uma API REST e um banco de dados, o deploy estático comum (como GitHub Pages) não suporta as rotas de gravação e exclusão. Para testar todas as funcionalidades (CRUD), é necessário rodar o projeto localmente.
+Como este projeto utiliza o `json-server` para simular uma API REST e um banco de dados, o deploy estático comum (como GitHub Page) não suporta as rotas de gravação e exclusão. Para testar todas as funcionalidades (CRUD), é necessário rodar o projeto localmente.
 
 **1. Clone o repositório:**
 ```bash
